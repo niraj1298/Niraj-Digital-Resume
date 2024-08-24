@@ -9,7 +9,7 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2 flex justify-center items-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
-            <Image src="/H1.png" alt="Your Name" layout="fill" objectFit="contain" />
+            <Image src="/first.png" alt="Your Name" layout="fill" objectFit="contain" />
           </div>
         </div>
         <div className="md:w-1/2">

@@ -17,14 +17,10 @@ const Hero = () => {
       </div>
     </div>
     <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-      <div className="relative w-[500px] h-[500px] md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg">
-        <Image
-          src="/first.png"
-          alt="Niraj"
-          layout="fill"
-          objectFit="contain"
-        />
-      </div>
+        <div className="relative w-[500px] h-[500px] md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+          <Image src="/H1.png" alt="Niraj" layout="fill" objectFit="contain" />
+        </div>
+
     </div>
   </section>
   )
