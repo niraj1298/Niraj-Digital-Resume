@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Hero = () => {
+const Hero: React.FC = () => {
     
   return (
     <section className="min-h-screen py-32 flex flex-col items-center md:flex-row">
