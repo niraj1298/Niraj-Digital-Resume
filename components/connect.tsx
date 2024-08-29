@@ -30,4 +30,4 @@ const Connect: React.FC = () => {
     )
 }
 
-export default Connect
+export default Connect;
