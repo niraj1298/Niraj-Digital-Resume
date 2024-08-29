@@ -9,8 +9,7 @@ const Footer: React.FC = () => {
             <p className="text-lg">© 2024 Niraj. All rights reserved.</p>
             <div className="flex space-x-4">
               <a href="https://github.com/niraj1298" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">GitHub</a>
-              <a href="https://linkedin.com/in/niraj1298" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">LinkedIn</a>
-              <a href="https://twitter.com/niraj1298" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">Twitter</a>
+              <a href="https://www.linkedin.com/in/nirajnepal01/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-300">LinkedIn</a>
             </div>
           </div>
         </footer>
