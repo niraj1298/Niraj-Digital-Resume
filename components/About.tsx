@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/2 flex justify-center items-center">
             <div className="relative overflow-hidden shadow-lg">
-              <Image src="/first.jpg" alt="Your Name" width={384} height={384} className="md:w-112 md:h-112 object-contain" />
+              <Image src="/first.jpg" alt="niraj grad pic" width={384} height={384} className="md:w-112 md:h-112 object-contain" />
             </div>
           </div>
           <div className="md:w-1/2">
