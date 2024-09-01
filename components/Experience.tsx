@@ -29,13 +29,13 @@ const timelineData: TimelineItem[] = [
         <div className="flex flex-col mt-4">
           <h2 className="font-bold mb-2">Skills</h2>
           <div className="flex space-x-4">
-          <FaJava size={24}/>
-          <BiLogoSpringBoot size={24}/>
-          <SiGradle size={24}/>
-          <TbSql size={24}/>
-          <FaGitAlt size={24}/>
+            <FaJava size={24} />
+            <BiLogoSpringBoot size={24} />
+            <SiGradle size={24} />
+            <TbSql size={24} />
+            <FaGitAlt size={24} />
           </div>
-          </div>
+        </div>
       </div>
     ),
   },
@@ -47,10 +47,10 @@ const timelineData: TimelineItem[] = [
       <div>
         <p className="mb-2">AI Vision and Machine Learning company</p>
         <ul className="list-disc ml-5 space-y-2">
-          <li><span className="font-bold">Leadership & Strategy: </span> Spearhead AI vision technology strategies, aligning with company goals, and mentor tech teams in innovation and collaboration.</li>
+          <li><span className="font-bold">Leadership &amp; Strategy: </span> Spearhead AI vision technology strategies, aligning with company goals, and mentor tech teams in innovation and collaboration.</li>
           <li><span className="font-bold">Dual Role Leadership:</span> Serve as CTO and Lead Engineer, balancing strategic oversight with hands-on technical involvement in AI and software projects.</li>
           <li><span className="font-bold">Scaling Teams: </span>Drive growth of engineering and AI teams, focusing on talent recruitment, skill development, and fostering an inclusive work environment.</li>
-          <li><span className="font-bold">Technical Excellence: </span>Oversee AI-driven vision systems' design and deployment, ensuring adherence to best practices and security protocols.</li>
+          <li><span className="font-bold">Technical Excellence: </span>Oversee AI-driven vision systems&#39; design and deployment, ensuring adherence to best practices and security protocols.</li>
           <li><span className="font-bold">AI Vision Innovation: </span>Lead groundbreaking AI vision projects, integrating cutting-edge technologies into scalable, robust solutions.</li>
         </ul>
         <hr className="mt-2" />
@@ -63,8 +63,7 @@ const timelineData: TimelineItem[] = [
             <TbBrandNextjs size={24} />
             <BiLogoTailwindCss size={24} />
             <RiFirebaseFill size={24} />
-            <FaGitAlt size={24}/>
-
+            <FaGitAlt size={24} />
           </div>
         </div>
       </div>
@@ -94,7 +93,7 @@ const timelineData: TimelineItem[] = [
             <TbBrandNextjs size={24} />
             <BiLogoTailwindCss size={24} />
             <SiJest size={24} />
-            <FaGitAlt size={24}/>
+            <FaGitAlt size={24} />
           </div>
         </div>
       </div>
@@ -128,13 +127,14 @@ const timelineData: TimelineItem[] = [
             <RiFirebaseFill size={24} />
             <SiMui size={24} />
             <SiJest size={24} />
-            <FaGitAlt size={24}/>
+            <FaGitAlt size={24} />
           </div>
         </div>
       </div>
     )
   },
 ];
+
 const Experience: React.FC = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
@@ -177,6 +177,6 @@ const Experience: React.FC = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Experience;
