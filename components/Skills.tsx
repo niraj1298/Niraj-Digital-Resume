@@ -9,7 +9,7 @@ const skills = [
     {name: 'Java', level: '70%'},
 ];
 
-const Connect: React.FC = () => {
+const Skills: React.FC = () => {
     return (
       <section id="skills" className="py-20 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-lg shadow-lg mb-20">
           <div className='max-w-4xl mx-auto'>
@@ -30,4 +30,4 @@ const Connect: React.FC = () => {
     )
 }
 
-export default Connect;
+export default Skills;

@@ -5,7 +5,7 @@ import About from '../components/About';
 import Projects from '../components/Projects';
 import Experience from '../components/Experience';
 import Footer from '../components/Footer';
-import Connect from '../components/Connect';
+import Skills from '@/components/Skills';
 
 export default function HomePage() {
   return (
@@ -16,7 +16,7 @@ export default function HomePage() {
       <About />
       <Projects />
       <Experience />
-      <Connect />
+      <Skills />
       <Footer />
       </div>
     </div>
