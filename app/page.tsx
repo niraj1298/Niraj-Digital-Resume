@@ -9,8 +9,8 @@ import Skills from '@/components/Skills';
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-gray-900">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="bg-white text-gray-900 overflow-x-hidden">
+    <div className="max-w-7xl w-full mx-auto px-4">
       <NavBar />
       <Hero />
       <About />
@@ -18,7 +18,7 @@ export default function HomePage() {
       <Experience />
       <Skills />
       <Footer />
-      </div>
     </div>
+  </div>
   ); 
 }

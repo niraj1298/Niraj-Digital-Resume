@@ -140,42 +140,43 @@ const Experience: React.FC = () => {
 
   return (
     <section id="experience" className="my-40">
-      <h1 className="text-3xl font-bold text-center mb-12">Work Experience</h1>
-      <div className="relative wrap overflow-hidden p-10 h-full">
-        <div className="absolute h-full border border-blue-500 left-1/2 transform -translate-x-1/2"></div>
-        {timelineData.map((item, index) => (
-          <div
-            key={index}
-            className={`mb-8 flex justify-between items-center w-full cursor-pointer ${
-              index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-            }`}
-            onClick={() => setSelectedIndex(index)}
-          >
-            <div className="w-5/12"></div>
-            <div
-              className={`relative bg-blue-500 rounded-lg w-5/12 px-6 py-4 transition-shadow duration-300 ${
-                selectedIndex === index
-                  ? "shadow-2xl border-2 border-white"
-                  : "shadow-lg"
-              }`}
-            >
-              <h3 className="mb-2 font-bold text-white text-xl">
-                {item.title}
-              </h3>
-              <p className="text-sm leading-snug tracking-wide text-white">
-                {item.date}
-              </p>
-              <p className="text-sm leading-snug tracking-wide text-white">
-                {item.company}
-              </p>
-              <div className="mt-2 text-sm leading-snug tracking-wide text-white">
-                {item.description}
-              </div>
-            </div>
+  <h1 className="text-3xl font-bold text-center mb-12">Work Experience</h1>
+  <div className="relative wrap overflow-hidden p-10 h-full">
+    <div className="absolute h-full border border-blue-500 left-1/2 transform -translate-x-1/2"></div>
+    {timelineData.map((item, index) => (
+      <div
+        key={index}
+        className={`mb-8 lg:mb-12 xl:mb-16 flex justify-between items-center w-full cursor-pointer ${
+          index % 2 === 0 ? "flex-row-reverse" : "flex-row"
+        }`}
+        onClick={() => setSelectedIndex(index)}
+      >
+        <div className="w-5/12"></div>
+        <div
+          className={`relative bg-blue-500 rounded-lg w-5/12 px-6 py-4 transition-shadow duration-300 ${
+            selectedIndex === index
+              ? "shadow-2xl border-2 border-white"
+              : "shadow-lg"
+          }`}
+        >
+          <h3 className="mb-2 font-bold text-white text-xl">
+            {item.title}
+          </h3>
+          <p className="text-sm leading-snug tracking-wide text-white">
+            {item.date}
+          </p>
+          <p className="text-sm leading-snug tracking-wide text-white">
+            {item.company}
+          </p>
+          <div className="mt-2 text-sm leading-snug tracking-wide text-white">
+            {item.description}
           </div>
-        ))}
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 };
 

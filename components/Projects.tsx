@@ -57,32 +57,26 @@ const projects: Project[] = [
 
 
 const ProjectsSection: React.FC = () => (
-  <section id="projects" className="py-16">
-    <h1 className="text-3xl font-bold text-center mb-12">Highlighted Projects</h1>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {projects.map((project, index) => (
-        <div
-          key={index}
-          className="bg-white border border-gray-200 shadow-md rounded-lg p-6 flex flex-col justify-center items-center text-center"
-        >
-          <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
-          <p className="text-gray-700 mb-4">{project.description}</p>
-          <p className="font-semibold mb-4">Skills Utilized</p>
-          <div className="flex flex-wrap justify-center items-center text-blue-500 gap-4 mb-5">
-            {project.skills.map((skill) => skill)}
-          </div>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:text-blue-600 transition duration-300"
-          >
-            View on GitHub
-          </a>
+<section id="projects" className="py-16">
+  <h1 className="text-3xl font-bold text-center mb-12">Highlighted Projects</h1>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {projects.map((project, index) => (
+      <div key={index} className="bg-white border border-gray-200 shadow-md rounded-lg p-6 text-center transition duration-300 hover:shadow-lg">
+        <h2 className="text-2xl font-bold mb-4">{project.title}</h2>
+        <p className="text-gray-700 mb-4">{project.description}</p>
+        <p className="font-semibold mb-4">Skills Utilized</p>
+        <div className="flex flex-wrap justify-center gap-4 mb-5 text-blue-500">
+          {project.skills}
         </div>
-      ))}
-    </div>
-  </section>
+        <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600">
+          View on GitHub
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
+
 );
 
 export default ProjectsSection;
